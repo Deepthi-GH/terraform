@@ -1,13 +1,14 @@
 resource "aws_instance" "ec2_instance" {
     ami              = "ami-09c813fb71547fc4f"
     instance_type    = "t3.micro"
+    vpc_security_group_ids = [aws_security_group.allow_all.id]
     tags = {
         Name = "Terraform"
         Terraform = "true"
     }
 }
 
-resource "aws_security_group" "sg_allow_all_traffic" {
+resource "aws_security_group" "allow_all" {
     name =            "allow_all_traffic"
     description =     "Security group allowing all inbound and outbound traffic"
     egress{
@@ -31,3 +32,5 @@ resource "aws_security_group" "sg_allow_all_traffic" {
 
     }
 }
+
+
