@@ -1,0 +1,100 @@
+ + ami_id_output = "ami-09c813fb71547fc4f"
+  + mongodbinfo   = {
+      + ami                         = "ami-09c813fb71547fc4f"
+      + arn                         = "arn:aws:ec2:us-east-1:485658242739:instance/i-0d7a9ddfeeb34853d"
+      + associate_public_ip_address = true
+      + availability_zone           = "us-east-1b"
+      + credit_specification        = [
+          + {
+              + cpu_credits = "unlimited"
+            },
+        ]
+      + disable_api_stop            = false
+      + disable_api_termination     = false
+      + ebs_block_device            = []
+      + ebs_optimized               = true
+      + enclave_options             = [
+          + {
+              + enabled = false
+            },
+        ]
+      + ephemeral_block_device      = []
+      + filter                      = null
+      + get_password_data           = false
+      + get_user_data               = false
+      + host_id                     = ""
+      + host_resource_group_arn     = ""
+      + iam_instance_profile        = ""
+      + id                          = "i-0d7a9ddfeeb34853d"
+      + instance_id                 = "i-0d7a9ddfeeb34853d"
+      + instance_state              = "running"
+      + instance_tags               = null
+      + instance_type               = "t3.micro"
+      + ipv6_addresses              = []
+      + key_name                    = ""
+      + launch_time                 = "2025-10-16T01:21:15Z"
+      + maintenance_options         = [
+          + {
+              + auto_recovery = "default"
+            },
+        ]
+      + metadata_options            = [
+          + {
+              + http_endpoint               = "enabled"
+              + http_protocol_ipv6          = "disabled"
+              + http_put_response_hop_limit = 1
+              + http_tokens                 = "optional"
+              + instance_metadata_tags      = "disabled"
+            },
+        ]
+      + monitoring                  = false
+      + network_interface_id        = "eni-0a231c3ea9fae4a95"
+      + outpost_arn                 = ""
+      + password_data               = null
+      + placement_group             = ""
+      + placement_group_id          = ""
+      + placement_partition_number  = 0
+      + private_dns                 = "ip-172-31-28-224.ec2.internal"
+      + private_dns_name_options    = [
+          + {
+              + enable_resource_name_dns_a_record    = true
+              + enable_resource_name_dns_aaaa_record = false
+              + hostname_type                        = "ip-name"
+            },
+        ]
+      + private_ip                  = "172.31.28.224"
+      + public_dns                  = "ec2-98-80-118-76.compute-1.amazonaws.com"
+      + public_ip                   = "98.80.118.76"
+      + region                      = "us-east-1"
+      + root_block_device           = [
+          + {
+              + delete_on_termination = true
+              + device_name           = "/dev/sda1"
+              + encrypted             = false
+              + iops                  = 3000
+              + kms_key_id            = ""
+              + tags                  = {}
+              + throughput            = 125
+              + volume_id             = "vol-0b14ac683a9f3390a"
+              + volume_size           = 20
+              + volume_type           = "gp3"
+            },
+        ]
+      + secondary_private_ips       = []
+      + security_groups             = [
+          + "allow-all",
+        ]
+      + source_dest_check           = true
+      + subnet_id                   = "subnet-0c4cbffefbac4d546"
+      + tags                        = {
+          + Name = "mongodb"
+        }
+      + tenancy                     = "default"
+      + timeouts                    = null
+      + user_data                   = null
+      + user_data_base64            = null
+      + vpc_security_group_ids      = [
+          + "sg-074e260911c3a2487",
+        ]
+    }
+
